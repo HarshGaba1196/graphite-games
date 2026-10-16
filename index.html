@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Six pencil-and-paper classics in one page: Sudoku, Tic-tac-toe, Dots and Boxes, Connect Four, Minesweeper and Hangman.">
 <title>Graphite Games</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +43,9 @@
   --peer: #222831; --same: #2c3a60; --error: #ff7d70; --error-soft: #47231f; --good: #6fd29b; color-scheme: dark;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; }
+img { max-width: 100%; }
 html, body { min-height: 100%; }
 body {
   background-color: var(--paper);
@@ -276,7 +285,8 @@ kbd { font-family: var(--f-body); font-size: 0.72rem; border: 1px solid var(--ru
   .draw .mark, .winline line, .hm-art .hpart.draw { stroke-dashoffset: 0; }
 }
 </style>
-
+</head>
+<body>
 <div class="wrap">
   <div class="topbar">
     <button class="brand" type="button" id="brand">Graphite Games<span>✎</span></button>
@@ -1487,3 +1497,5 @@ kbd { font-family: var(--f-body); font-size: 0.72rem; border: 1px solid var(--ru
   show(hot.view || location.hash.slice(1) || "menu");
 })();
 </script>
+</body>
+</html>
